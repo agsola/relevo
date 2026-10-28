@@ -1,0 +1,62 @@
+{
+  "name": "relevo",
+  "version": "0.1.0",
+  "description": "Keep a long Claude Code task running across usage-limit resets: wraps up before the limit, resumes after the reset, keeps it moving in between.",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "anthropic",
+    "cli",
+    "tui",
+    "usage-limits",
+    "tmux",
+    "agent"
+  ],
+  "homepage": "https://github.com/agsola/relevo#readme",
+  "bugs": {
+    "url": "https://github.com/agsola/relevo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agsola/relevo.git"
+  },
+  "license": "MIT",
+  "author": "agsola",
+  "type": "module",
+  "bin": {
+    "relevo": "bin/relevo.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "README.es.md",
+    "docs",
+    "LICENSE"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.tsx",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "ink": "^8.0.0",
+    "react": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "ink-testing-library": "^4.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
