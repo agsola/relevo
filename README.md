@@ -32,6 +32,17 @@ Relevo does that babysitting for you:
 
 ## Install
 
+### Without cloning (recommended)
+
+Install the ready-built package from the [latest release](https://github.com/agsola/relevo/releases/latest):
+
+```sh
+npm install -g https://github.com/agsola/relevo/releases/download/v0.1.0/relevo-0.1.0.tgz
+relevo doctor
+```
+
+### From source
+
 ```sh
 git clone https://github.com/agsola/relevo.git
 cd relevo

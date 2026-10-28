@@ -30,6 +30,17 @@ Relevo hace ese trabajo de niñera por ti:
 
 ## Instalación
 
+### Sin clonar (recomendado)
+
+Instala el paquete ya compilado desde la [última versión publicada](https://github.com/agsola/relevo/releases/latest):
+
+```sh
+npm install -g https://github.com/agsola/relevo/releases/download/v0.1.0/relevo-0.1.0.tgz
+relevo doctor
+```
+
+### Desde el código fuente
+
 ```sh
 git clone https://github.com/agsola/relevo.git
 cd relevo

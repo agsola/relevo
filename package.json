@@ -29,6 +29,7 @@
   "files": [
     "bin",
     "dist",
+    "!dist/**/*.map",
     "README.md",
     "README.es.md",
     "docs",
